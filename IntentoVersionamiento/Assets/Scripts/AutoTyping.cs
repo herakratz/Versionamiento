@@ -41,7 +41,8 @@ public class AutoTyping : MonoBehaviour {
             t.text = Mensaje[a].Substring(0, i); 
 
             if(sonido != null)
-                GetComponent<AudioSource>().PlayOneShot(sonido); 
+                GetComponent<AudioSource>().PlayOneShot(sonido);
+            Debug.Log("Que buen chiste");
             yield return new WaitForSeconds(retrasoIntermedio); 
          }
     }
